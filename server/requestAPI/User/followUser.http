@@ -1,0 +1,6 @@
+PUT http://localhost:5000/user/62b360db44ab96b1584cdacb/follow
+Content-Type: application/json
+
+{
+  "currentUserId": "62b3654b212b28d78e1fd92c"
+}

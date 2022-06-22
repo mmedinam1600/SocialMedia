@@ -1,0 +1,17 @@
+PUT http://localhost:5000/user/62b34db0f30bbb4fde409443
+Content-Type: application/x-www-form-urlencoded
+
+username=diego200052&firstname=Diego Roberto&currentUserId=62b34db0f30bbb4fde409443&currentUserAdminStatus=false
+
+###
+
+PUT http://localhost:5000/user/62b34db0f30bbb4fde409443
+Content-Type: application/json
+
+{
+  "username": "diego200052@gmail.com",
+  "firstname": "Diego Robert",
+  "currentUserId": "62b34db0f30bbb4fde409443",
+  "password": "12345",
+  "currentUserAdminStatus": false
+}
