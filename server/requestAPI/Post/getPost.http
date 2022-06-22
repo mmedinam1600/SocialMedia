@@ -1,0 +1,4 @@
+GET http://localhost:5000/post/62b38616c7d7429f348a2878
+Accept: application/json
+
+###

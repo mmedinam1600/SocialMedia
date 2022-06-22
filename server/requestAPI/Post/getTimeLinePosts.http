@@ -1,0 +1,4 @@
+GET http://localhost:5000/post/62b38f1291ecbfc9f6748fb4/timeline
+Accept: application/json
+
+###
