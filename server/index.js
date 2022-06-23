@@ -1,6 +1,7 @@
 import express from 'express';
 import mongoose from 'mongoose';
 import 'dotenv/config';
+import cors from 'cors';
 import AuthRoute from "./routes/AuthRoute.js";
 import UserRoute from "./routes/UserRoute.js";
 import PostRoute from "./routes/postRoute.js";
@@ -19,6 +20,8 @@ app.use(express.urlencoded({
   inflate: true,
   extended: true
 }));
+
+app.use(cors());
 
 mongoose.connect(process.env.MONGO_URI, {})
   .then( () => {
