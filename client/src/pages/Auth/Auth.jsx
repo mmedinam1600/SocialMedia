@@ -1,13 +1,25 @@
 import React, {useState} from "react";
 import "./Auth.css";
 import Logo from "../../img/logo.png";
-import {useDispatch} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 import {logIn, signUp} from "../../actions/AuthAction";
 
+const initialStateData = {
+  firstname: "",
+  lastname: "",
+  password: "",
+  confirmpass: "",
+  username: ""
+}
+
+
 const Auth = () => {
+
+  const dispatch = useDispatch();
+  const loading = useSelector((state) => state.authReducer.loading);
+
   const [isSignUp, setIsSignUp] = useState(true);
-  const dispatch = useDispatch()
-  const [data, setData] = useState({firstname: "", lastname: "", password: "", confirmpass: "", username: ""});
+  const [data, setData] = useState(initialStateData);
   const [confirmPass, setConfirmPass] = useState(true);
 
   const handleChange = (e) => {
@@ -28,10 +40,8 @@ const Auth = () => {
 
   const resetForm = () => {
     setConfirmPass(true);
-    setData({firstname: "", lastname: "", password: "", confirmpass: "", username: ""})
+    setData(initialStateData)
   }
-
-  const loading = false;
 
 
   return (
