@@ -39,7 +39,7 @@ export const loginUser = async (req, res) => {
 
   try {
     const user = await UserModel.findOne({username: username});
-    if (!user) return res.status(404).json("User or password incorrect");
+    if (!user) return res.status(400).json("User or password incorrect");
 
     const validity = await bcrypt.compare(password, user.password);
 
