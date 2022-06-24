@@ -1,6 +1,6 @@
 import React from 'react';
 import './LogoSearch.css';
-import Logo from "../../img/Logo.png";
+import Logo from "/src/img/logo.png";
 import {UilSearch} from '@iconscout/react-unicons';
 
 function LogoSearch() {
