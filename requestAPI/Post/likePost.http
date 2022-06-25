@@ -1,0 +1,6 @@
+PUT http://localhost:5000/post/62b38a790a4d990700fdd1b5/like
+Content-Type: application/json
+
+{
+  "userId": "62b360db44ab96b1584cdacb"
+}

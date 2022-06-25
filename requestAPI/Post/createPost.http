@@ -1,0 +1,7 @@
+POST http://localhost:5000/post
+Content-Type: application/json
+
+{
+  "userId": "62b3654b212b28d78e1fd92c",
+  "desc": "This post is owned by ElCapiPrice"
+}

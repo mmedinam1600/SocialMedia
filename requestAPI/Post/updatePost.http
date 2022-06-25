@@ -1,0 +1,7 @@
+PUT http://localhost:5000/post/62b38a790a4d990700fdd1b5
+Content-Type: application/json
+
+{
+  "userId": "62b3654b212b28d78e1fd92c",
+  "desc": "Hello I am ElCapiPrice and I am developer"
+}

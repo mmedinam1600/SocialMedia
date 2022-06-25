@@ -1,0 +1,8 @@
+DELETE http://localhost:5000/post/62b38616c7d7429f348a2878
+Content-Type: application/json
+
+{
+  "userId": "62b3654b212b28d78e1fd92c"
+}
+
+###

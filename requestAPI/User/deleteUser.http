@@ -1,0 +1,9 @@
+DELETE http://localhost:5000/user/62b360a144ab96b1584cdac9
+Content-Type: application/json
+
+{
+  "currentUserId": "62b34db0f30bbb4fde409443",
+  "currentUserAdminStatus": true
+}
+
+###
