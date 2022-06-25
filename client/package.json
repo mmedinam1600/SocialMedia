@@ -1,8 +1,8 @@
 {
   "name": "social-media",
   "private": true,
-  "version": "0.0.0",
-  "proxy": "http://localhost:5000",
+  "version": "0.5.0",
+  "proxy": "https://social-media-mmedinam.herokuapp.com/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
